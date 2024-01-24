@@ -1,0 +1,125 @@
+@import url(./footer.css);
+
+.header-introduction {
+  font-weight: 300;
+  font-size: 30px;
+  padding: 4px 4px;
+  text-align: center;
+
+}
+
+.content-expl {
+  background-color: white;
+  padding: 6px 10px;
+  line-height: 24px;
+  margin-top: -30px;
+}
+
+.content-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  margin-top: 15px;
+  overflow: auto;
+  /* height: 300px; */
+}
+
+.img-content{
+  width: auto;
+  position: relative;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.img-content > a > img {
+  width: 100%;
+  transition: filter 1.2s ease;
+}
+
+.onhover-img-content > a > img {
+  filter: blur(4px);
+}
+
+.img-content > a > span {
+  position: absolute; 
+  font-weight: bolder;
+  text-decoration: none;
+  margin: 20% 25%;
+  font-size: 30px;
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.01);
+  color: black;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+
+.onhover-img-content > a > span {
+  opacity: 1;
+}
+
+
+#puberty-sign, 
+#period-counting,
+#family-planning {
+  background-color: rgba(255, 255, 255, 0.219);
+  
+  padding: 5px 120px;
+  
+}
+
+#puberty-sign > h3, h2{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#period-counting {
+  background-color: white;
+}
+
+#family-planning {
+  background-color: rgba(255, 192, 203);
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .content-img-container {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    width: 100%;
+  }
+  .img-content{
+    width: auto;
+  }
+
+  .img-content > a > span {
+    padding: 20px;
+  }
+
+  .header > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tobe-displayed {
+    margin-left: -40%;
+    position: static;
+    z-index: 20;
+  }
+
+  .tobe-displayed > a {
+    background-color: rgba(0, 0, 0, 0.893);
+  }
+
+  #puberty-sign, 
+  #period-counting,
+  #family-planning {
+    padding: 5px 50px;
+  }
+
+}

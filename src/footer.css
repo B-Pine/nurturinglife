@@ -1,0 +1,53 @@
+.footer {
+  background-color: rgba(135, 207, 235, 0.909);
+  min-height: 200px;
+
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer > p:first-child {
+  font-weight: bold;
+}
+
+.footer > p:last-child {
+  padding-bottom: 12px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+
+.left-footer-side > label {
+  display: flex;
+  justify-content: left;
+  align-content: right;
+  padding-bottom: 8px;
+}
+
+.left-footer-side > label > i {
+  padding-right:  8px;
+  font-size: 20px;
+}
+
+.right-footer-side > label {
+  display: flex;
+  justify-content: left;
+  padding-bottom: 4px;
+}
+
+.right-footer-side > label > i {
+  padding-right: 4px;
+}
+
+
+.small-about-content > label {
+  display: block;
+  padding-bottom: 4px;
+  text-align: start;
+}
+
+

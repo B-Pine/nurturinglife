@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Raleway, arial;
+  background-color: rgba(255, 255, 255, 0.425);
+
+  background-image: url(../images/intro-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  padding-bottom: 750px;
+}
+
+/* .start-up-popup {
+  display: none; 
+  position: absolute;
+  width: 40%;
+  padding: 12px;
+  text-align: center;
+  margin: -30% 30%;
+  background-color: white;
+}
+
+.popup-footer {
+  font-size: 10px;
+}
+
+.error-msg {
+  font-size: 10px;
+  color: red;
+  display: none;
+}
+
+.age-capture {
+  padding: 8px 12px;
+  font-family: italic;
+}
+
+.popup-continue-btn {
+  padding: 6px 8px;
+  border: none;
+  background-color: rgba(154, 118, 124, 0.635);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 12px;
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 4px;
+  background-color: white;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.header > ul {
+  width: inherit;
+}
+
+#org-name {
+  font-size: 40px;
+  text-align: center;
+  flex: 1;
+}
+
+.header ul > li {
+  display: inline;
+  padding: 4px;
+}
+
+.header ul > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+}
+
+
+.header ul > li > a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  /* padding: 8px; */
+  /* border-radius: 4px; */
+
+}
+
+.header > img {
+  width: 25px;
+  position: absolute;
+  float: right;
+  margin-left: 90%;
+  display: none;
+}
+
+.education-tab {
+  position: relative;
+}
+
+.tobe-displayed {
+  position: absolute;
+  display: none;
+  width: 200px;
+  margin-top: 6px;
+  margin-left: 50px;
+}
+
+.tobe-displayed > a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tobe-displayed > a:hover {
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.education-tab:hover .tobe-displayed {
+  display: block;
+}
+
+.logo-image {
+  width: 150px;
+}
+
+
+
+/* .tobe-dis {
+  display: none;
+}
+
+.main-drop:hover .tobe-dis{
+  color: mediumseagreen;
+  display: block;
+} */
+
+.backtop-container {
+  position: fixed;
+  background-color: aqua;
+  height: 100px;
+  left: 0;
+  right: 0;
+}
